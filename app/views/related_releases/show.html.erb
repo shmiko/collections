@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Related from release id:</b>
+  <%= @related_release.Related_From_Release_ID %>
+</p>
+
+<p>
+  <b>Related to release id:</b>
+  <%= @related_release.Related_To_Release_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @related_release.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @related_release.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @related_release.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @related_release.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_related_release_path(@related_release) %> |
+<%= link_to 'Back', related_releases_path %>

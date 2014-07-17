@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Base id:</b>
+  <%= @release.Base_ID %>
+</p>
+
+<p>
+  <b>Artist id:</b>
+  <%= @release.Artist_ID %>
+</p>
+
+<p>
+  <b>Collection type id:</b>
+  <%= @release.Collection_Type_ID %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @release.Title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @release.Description %>
+</p>
+
+<p>
+  <b>Release date:</b>
+  <%= @release.Release_Date %>
+</p>
+
+<p>
+  <b>Cat no:</b>
+  <%= @release.Cat_No %>
+</p>
+
+<p>
+  <b>Rating id:</b>
+  <%= @release.Rating_ID %>
+</p>
+
+<p>
+  <b>Edition comment:</b>
+  <%= @release.Edition_Comment %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @release.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @release.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @release.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @release.Updated_Person_ID %>
+</p>
+<h3>Comments</h3>
+<%= render @release.comments %>
+
+<h4>Add a comment:</h4>
+<%= render "comments/form" %>
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>

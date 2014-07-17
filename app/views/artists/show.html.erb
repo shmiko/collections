@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @artist.Name %>
+</p>
+
+<p>
+  <b>Artist type id:</b>
+  <%= @artist.Artist_Type_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @artist.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @artist.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @artist.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @artist.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %>

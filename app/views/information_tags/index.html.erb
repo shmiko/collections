@@ -1,0 +1,33 @@
+<h1>Listing information_tags</h1>
+
+<table>
+  <tr>
+    <th>Tags id</th>
+    <th>Release id</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @information_tags.each do |information_tag| %>
+  <tr>
+    <td><%= information_tag.Tags_ID %></td>
+    <td><%= information_tag.Release_ID %></td>
+    <td><%= information_tag.Created %></td>
+    <td><%= information_tag.Updated %></td>
+    <td><%= information_tag.Created_Person_ID %></td>
+    <td><%= information_tag.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', information_tag %></td>
+    <td><%= link_to 'Edit', edit_information_tag_path(information_tag) %></td>
+    <td><%= link_to 'Destroy', information_tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Information tag', new_information_tag_path %>

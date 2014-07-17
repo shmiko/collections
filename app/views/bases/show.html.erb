@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @basis.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @basis.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @basis.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @basis.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @basis.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_basis_path(@basis) %> |
+<%= link_to 'Back', bases_path %>

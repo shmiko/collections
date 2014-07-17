@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @language.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @language.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @language.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @language.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @language.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_language_path(@language) %> |
+<%= link_to 'Back', languages_path %>

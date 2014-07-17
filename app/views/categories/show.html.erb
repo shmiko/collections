@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category release id:</b>
+  <%= @category.Category_Release_ID %>
+</p>
+
+<p>
+  <b>Category type id:</b>
+  <%= @category.Category_Type_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @category.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @category.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @category.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @category.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

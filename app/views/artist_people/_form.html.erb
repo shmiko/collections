@@ -1,0 +1,49 @@
+<%= form_for(@artist_person) do |f| %>
+  <% if @artist_person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@artist_person.errors.count, "error") %> prohibited this artist_person from being saved:</h2>
+
+      <ul>
+      <% @artist_person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Artist_ID %><br />
+    <%= f.number_field :Artist_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Persons_ID %><br />
+    <%= f.number_field :Persons_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Enter_Date %><br />
+    <%= f.date_select :Enter_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Leave_Date %><br />
+    <%= f.date_select :Leave_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Created %><br />
+    <%= f.date_select :Created %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated %><br />
+    <%= f.date_select :Updated %>
+  </div>
+  <div class="field">
+    <%= f.label :Created_Person_ID %><br />
+    <%= f.number_field :Created_Person_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated_Person_ID %><br />
+    <%= f.number_field :Updated_Person_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

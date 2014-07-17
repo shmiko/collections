@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Format release id:</b>
+  <%= @format.Format_Release_ID %>
+</p>
+
+<p>
+  <b>Format type id:</b>
+  <%= @format.Format_Type_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @format.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @format.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @format.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @format.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_format_path(@format) %> |
+<%= link_to 'Back', formats_path %>

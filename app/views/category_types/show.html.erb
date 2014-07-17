@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category type collection type id:</b>
+  <%= @category_type.Category_Type_Collection_Type_ID %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @category_type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @category_type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @category_type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @category_type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @category_type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_type_path(@category_type) %> |
+<%= link_to 'Back', category_types_path %>

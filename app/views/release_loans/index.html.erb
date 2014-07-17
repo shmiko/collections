@@ -1,0 +1,39 @@
+<h1>Listing release_loans</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Person from id</th>
+    <th>Person to id</th>
+    <th>Loan out date</th>
+    <th>Due back date</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @release_loans.each do |release_loan| %>
+  <tr>
+    <td><%= release_loan.Release_ID %></td>
+    <td><%= release_loan.Person_From_ID %></td>
+    <td><%= release_loan.Person_To_ID %></td>
+    <td><%= release_loan.Loan_Out_Date %></td>
+    <td><%= release_loan.Due_Back_Date %></td>
+    <td><%= release_loan.Created %></td>
+    <td><%= release_loan.Updated %></td>
+    <td><%= release_loan.Created_Person_ID %></td>
+    <td><%= release_loan.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', release_loan %></td>
+    <td><%= link_to 'Edit', edit_release_loan_path(release_loan) %></td>
+    <td><%= link_to 'Destroy', release_loan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Release loan', new_release_loan_path %>

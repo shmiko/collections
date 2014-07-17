@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Release id:</b>
+  <%= @release_track.Release_ID %>
+</p>
+
+<p>
+  <b>Tracks id:</b>
+  <%= @release_track.Tracks_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @release_track.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @release_track.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @release_track.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @release_track.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_release_track_path(@release_track) %> |
+<%= link_to 'Back', release_tracks_path %>

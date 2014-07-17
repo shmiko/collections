@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Genre type collection type id:</b>
+  <%= @genre_type.Genre_Type_Collection_Type_ID %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @genre_type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @genre_type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @genre_type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @genre_type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @genre_type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_genre_type_path(@genre_type) %> |
+<%= link_to 'Back', genre_types_path %>

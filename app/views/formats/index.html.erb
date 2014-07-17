@@ -1,0 +1,33 @@
+<h1>Listing formats</h1>
+
+<table>
+  <tr>
+    <th>Format release id</th>
+    <th>Format type id</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @formats.each do |format| %>
+  <tr>
+    <td><%= format.Format_Release_ID %></td>
+    <td><%= format.Format_Type_ID %></td>
+    <td><%= format.Created %></td>
+    <td><%= format.Updated %></td>
+    <td><%= format.Created_Person_ID %></td>
+    <td><%= format.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', format %></td>
+    <td><%= link_to 'Edit', edit_format_path(format) %></td>
+    <td><%= link_to 'Destroy', format, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Format', new_format_path %>

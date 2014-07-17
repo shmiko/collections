@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_type_path(@type) %> |
+<%= link_to 'Back', types_path %>

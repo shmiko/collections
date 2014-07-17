@@ -1,0 +1,37 @@
+<h1>Listing artist_people</h1>
+
+<table>
+  <tr>
+    <th>Artist id</th>
+    <th>Persons id</th>
+    <th>Enter date</th>
+    <th>Leave date</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @artist_people.each do |artist_person| %>
+  <tr>
+    <td><%= artist_person.Artist_ID %></td>
+    <td><%= artist_person.Persons_ID %></td>
+    <td><%= artist_person.Enter_Date %></td>
+    <td><%= artist_person.Leave_Date %></td>
+    <td><%= artist_person.Created %></td>
+    <td><%= artist_person.Updated %></td>
+    <td><%= artist_person.Created_Person_ID %></td>
+    <td><%= artist_person.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', artist_person %></td>
+    <td><%= link_to 'Edit', edit_artist_person_path(artist_person) %></td>
+    <td><%= link_to 'Destroy', artist_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Artist person', new_artist_person_path %>

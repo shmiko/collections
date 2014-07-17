@@ -1,0 +1,41 @@
+<%= form_for(@genre_type) do |f| %>
+  <% if @genre_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@genre_type.errors.count, "error") %> prohibited this genre_type from being saved:</h2>
+
+      <ul>
+      <% @genre_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Genre_Type_Collection_Type_ID %><br />
+    <%= f.number_field :Genre_Type_Collection_Type_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_field :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :Created %><br />
+    <%= f.date_select :Created %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated %><br />
+    <%= f.date_select :Updated %>
+  </div>
+  <div class="field">
+    <%= f.label :Created_Person_ID %><br />
+    <%= f.number_field :Created_Person_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated_Person_ID %><br />
+    <%= f.number_field :Updated_Person_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

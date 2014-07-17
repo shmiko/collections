@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Release id:</b>
+  <%= @picture.Release_ID %>
+</p>
+
+<p>
+  <b>Front:</b>
+  <%= @picture.Front %>
+</p>
+
+<p>
+  <b>Back:</b>
+  <%= @picture.Back %>
+</p>
+
+<p>
+  <b>Front flap:</b>
+  <%= @picture.Front_Flap %>
+</p>
+
+<p>
+  <b>Back flap:</b>
+  <%= @picture.Back_Flap %>
+</p>
+
+<p>
+  <b>Inner page 1:</b>
+  <%= @picture.Inner_Page_1 %>
+</p>
+
+<p>
+  <b>Inner page 2:</b>
+  <%= @picture.Inner_Page_2 %>
+</p>
+
+<p>
+  <b>Inner page 3:</b>
+  <%= @picture.Inner_Page_3 %>
+</p>
+
+<p>
+  <b>Inner page 4:</b>
+  <%= @picture.Inner_Page_4 %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @picture.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @picture.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @picture.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @picture.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>

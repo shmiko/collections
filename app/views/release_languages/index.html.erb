@@ -1,0 +1,33 @@
+<h1>Listing release_languages</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Language id</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @release_languages.each do |release_language| %>
+  <tr>
+    <td><%= release_language.Release_ID %></td>
+    <td><%= release_language.Language_ID %></td>
+    <td><%= release_language.Created %></td>
+    <td><%= release_language.Updated %></td>
+    <td><%= release_language.Created_Person_ID %></td>
+    <td><%= release_language.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', release_language %></td>
+    <td><%= link_to 'Edit', edit_release_language_path(release_language) %></td>
+    <td><%= link_to 'Destroy', release_language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Release language', new_release_language_path %>

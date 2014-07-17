@@ -1,0 +1,33 @@
+<h1>Listing release_tracks</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Tracks id</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @release_tracks.each do |release_track| %>
+  <tr>
+    <td><%= release_track.Release_ID %></td>
+    <td><%= release_track.Tracks_ID %></td>
+    <td><%= release_track.Created %></td>
+    <td><%= release_track.Updated %></td>
+    <td><%= release_track.Created_Person_ID %></td>
+    <td><%= release_track.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', release_track %></td>
+    <td><%= link_to 'Edit', edit_release_track_path(release_track) %></td>
+    <td><%= link_to 'Destroy', release_track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Release track', new_release_track_path %>

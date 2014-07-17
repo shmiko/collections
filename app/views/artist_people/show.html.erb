@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Artist id:</b>
+  <%= @artist_person.Artist_ID %>
+</p>
+
+<p>
+  <b>Persons id:</b>
+  <%= @artist_person.Persons_ID %>
+</p>
+
+<p>
+  <b>Enter date:</b>
+  <%= @artist_person.Enter_Date %>
+</p>
+
+<p>
+  <b>Leave date:</b>
+  <%= @artist_person.Leave_Date %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @artist_person.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @artist_person.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @artist_person.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @artist_person.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_artist_person_path(@artist_person) %> |
+<%= link_to 'Back', artist_people_path %>

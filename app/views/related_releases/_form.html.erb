@@ -1,0 +1,41 @@
+<%= form_for(@related_release) do |f| %>
+  <% if @related_release.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@related_release.errors.count, "error") %> prohibited this related_release from being saved:</h2>
+
+      <ul>
+      <% @related_release.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Related_From_Release_ID %><br />
+    <%= f.number_field :Related_From_Release_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Related_To_Release_ID %><br />
+    <%= f.number_field :Related_To_Release_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Created %><br />
+    <%= f.date_select :Created %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated %><br />
+    <%= f.date_select :Updated %>
+  </div>
+  <div class="field">
+    <%= f.label :Created_Person_ID %><br />
+    <%= f.number_field :Created_Person_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated_Person_ID %><br />
+    <%= f.number_field :Updated_Person_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

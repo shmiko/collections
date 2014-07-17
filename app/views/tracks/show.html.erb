@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Base id:</b>
+  <%= @track.Base_ID %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @track.Title %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @track.Length %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @track.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @track.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @track.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @track.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Back', tracks_path %>

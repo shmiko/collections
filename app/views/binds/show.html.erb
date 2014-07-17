@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @bind.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @bind.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @bind.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @bind.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @bind.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_bind_path(@bind) %> |
+<%= link_to 'Back', binds_path %>

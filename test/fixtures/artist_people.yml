@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Artist_ID: 1
+  Persons_ID: 1
+  Enter_Date: 2014-07-13
+  Leave_Date: 2014-07-13
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1
+
+two:
+  Artist_ID: 1
+  Persons_ID: 1
+  Enter_Date: 2014-07-13
+  Leave_Date: 2014-07-13
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1

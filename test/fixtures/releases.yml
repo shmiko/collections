@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Base_ID: 1
+  Artist_ID: 1
+  Collection_Type_ID: 1
+  Title: MyString
+  Description: MyString
+  Release_Date: 2014-07-13
+  Cat_No: MyString
+  Rating_ID: 1
+  Edition_Comment: MyString
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1
+
+two:
+  Base_ID: 1
+  Artist_ID: 1
+  Collection_Type_ID: 1
+  Title: MyString
+  Description: MyString
+  Release_Date: 2014-07-13
+  Cat_No: MyString
+  Rating_ID: 1
+  Edition_Comment: MyString
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1

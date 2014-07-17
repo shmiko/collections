@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @recording_type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @recording_type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @recording_type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @recording_type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @recording_type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_recording_type_path(@recording_type) %> |
+<%= link_to 'Back', recording_types_path %>

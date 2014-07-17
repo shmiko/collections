@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @audio_type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @audio_type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @audio_type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @audio_type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @audio_type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_audio_type_path(@audio_type) %> |
+<%= link_to 'Back', audio_types_path %>

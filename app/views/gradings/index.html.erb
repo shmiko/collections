@@ -1,0 +1,33 @@
+<h1>Listing gradings</h1>
+
+<table>
+  <tr>
+    <th>Grading</th>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gradings.each do |grading| %>
+  <tr>
+    <td><%= grading.Grading %></td>
+    <td><%= grading.Description %></td>
+    <td><%= grading.Created %></td>
+    <td><%= grading.Updated %></td>
+    <td><%= grading.Created_Person_ID %></td>
+    <td><%= grading.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', grading %></td>
+    <td><%= link_to 'Edit', edit_grading_path(grading) %></td>
+    <td><%= link_to 'Destroy', grading, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grading', new_grading_path %>

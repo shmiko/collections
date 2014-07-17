@@ -1,0 +1,31 @@
+<h1>Listing audio_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @audio_types.each do |audio_type| %>
+  <tr>
+    <td><%= audio_type.Description %></td>
+    <td><%= audio_type.Created %></td>
+    <td><%= audio_type.Updated %></td>
+    <td><%= audio_type.Created_Person_ID %></td>
+    <td><%= audio_type.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', audio_type %></td>
+    <td><%= link_to 'Edit', edit_audio_type_path(audio_type) %></td>
+    <td><%= link_to 'Destroy', audio_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Audio type', new_audio_type_path %>

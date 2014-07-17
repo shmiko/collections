@@ -1,0 +1,121 @@
+<%= form_for(@technical) do |f| %>
+  <% if @technical.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@technical.errors.count, "error") %> prohibited this technical from being saved:</h2>
+
+      <ul>
+      <% @technical.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Release_ID %><br />
+    <%= f.number_field :Release_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Bitrate %><br />
+    <%= f.text_field :Bitrate %>
+  </div>
+  <div class="field">
+    <%= f.label :Size %><br />
+    <%= f.text_field :Size %>
+  </div>
+  <div class="field">
+    <%= f.label :Dimensions %><br />
+    <%= f.text_field :Dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :Recording_Type_ID %><br />
+    <%= f.number_field :Recording_Type_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :ISBN10 %><br />
+    <%= f.text_field :ISBN10 %>
+  </div>
+  <div class="field">
+    <%= f.label :ISBN13 %><br />
+    <%= f.text_field :ISBN13 %>
+  </div>
+  <div class="field">
+    <%= f.label :External_References %><br />
+    <%= f.text_field :External_References %>
+  </div>
+  <div class="field">
+    <%= f.label :Created %><br />
+    <%= f.date_select :Created %>
+  </div>
+  <div class="field">
+    <%= f.label :Modified %><br />
+    <%= f.date_select :Modified %>
+  </div>
+  <div class="field">
+    <%= f.label :Service %><br />
+    <%= f.text_field :Service %>
+  </div>
+  <div class="field">
+    <%= f.label :Service_URL %><br />
+    <%= f.text_field :Service_URL %>
+  </div>
+  <div class="field">
+    <%= f.label :Webpage %><br />
+    <%= f.text_field :Webpage %>
+  </div>
+  <div class="field">
+    <%= f.label :Volume_nr %><br />
+    <%= f.text_field :Volume_nr %>
+  </div>
+  <div class="field">
+    <%= f.label :Volume_Name %><br />
+    <%= f.text_field :Volume_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Series %><br />
+    <%= f.text_field :Series %>
+  </div>
+  <div class="field">
+    <%= f.label :Pages %><br />
+    <%= f.number_field :Pages %>
+  </div>
+  <div class="field">
+    <%= f.label :Storage_Medium %><br />
+    <%= f.text_field :Storage_Medium %>
+  </div>
+  <div class="field">
+    <%= f.label :Technical_Notes %><br />
+    <%= f.text_field :Technical_Notes %>
+  </div>
+  <div class="field">
+    <%= f.label :No_of_Discs %><br />
+    <%= f.number_field :No_of_Discs %>
+  </div>
+  <div class="field">
+    <%= f.label :Total_Runtime %><br />
+    <%= f.text_field :Total_Runtime %>
+  </div>
+  <div class="field">
+    <%= f.label :Value_High %><br />
+    <%= f.text_field :Value_High %>
+  </div>
+  <div class="field">
+    <%= f.label :Value_Med %><br />
+    <%= f.text_field :Value_Med %>
+  </div>
+  <div class="field">
+    <%= f.label :Value_Low %><br />
+    <%= f.text_field :Value_Low %>
+  </div>
+  <div class="field">
+    <%= f.label :Created_Person_ID %><br />
+    <%= f.number_field :Created_Person_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated_Person_ID %><br />
+    <%= f.number_field :Updated_Person_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

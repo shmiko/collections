@@ -1,0 +1,33 @@
+<h1>Listing followings</h1>
+
+<table>
+  <tr>
+    <th>Follower person id</th>
+    <th>Following person id</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @followings.each do |following| %>
+  <tr>
+    <td><%= following.Follower_Person_ID %></td>
+    <td><%= following.Following_Person_ID %></td>
+    <td><%= following.Created %></td>
+    <td><%= following.Updated %></td>
+    <td><%= following.Created_Person_ID %></td>
+    <td><%= following.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', following %></td>
+    <td><%= link_to 'Edit', edit_following_path(following) %></td>
+    <td><%= link_to 'Destroy', following, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Following', new_following_path %>

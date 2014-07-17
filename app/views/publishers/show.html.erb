@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @publisher.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @publisher.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @publisher.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @publisher.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @publisher.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_publisher_path(@publisher) %> |
+<%= link_to 'Back', publishers_path %>

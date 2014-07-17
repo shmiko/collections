@@ -1,0 +1,35 @@
+<h1>Listing addres</h1>
+
+<table>
+  <tr>
+    <th>Street</th>
+    <th>Suburb</th>
+    <th>Country id</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @addres.each do |addre| %>
+  <tr>
+    <td><%= addre.Street %></td>
+    <td><%= addre.Suburb %></td>
+    <td><%= addre.Country_ID %></td>
+    <td><%= addre.Created %></td>
+    <td><%= addre.Updated %></td>
+    <td><%= addre.Created_Person_ID %></td>
+    <td><%= addre.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', addre %></td>
+    <td><%= link_to 'Edit', edit_addre_path(addre) %></td>
+    <td><%= link_to 'Destroy', addre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Addre', new_addre_path %>

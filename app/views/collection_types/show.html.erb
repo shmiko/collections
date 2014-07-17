@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @collection_type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @collection_type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @collection_type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @collection_type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @collection_type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_collection_type_path(@collection_type) %> |
+<%= link_to 'Back', collection_types_path %>

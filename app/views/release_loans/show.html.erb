@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Release id:</b>
+  <%= @release_loan.Release_ID %>
+</p>
+
+<p>
+  <b>Person from id:</b>
+  <%= @release_loan.Person_From_ID %>
+</p>
+
+<p>
+  <b>Person to id:</b>
+  <%= @release_loan.Person_To_ID %>
+</p>
+
+<p>
+  <b>Loan out date:</b>
+  <%= @release_loan.Loan_Out_Date %>
+</p>
+
+<p>
+  <b>Due back date:</b>
+  <%= @release_loan.Due_Back_Date %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @release_loan.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @release_loan.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @release_loan.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @release_loan.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_release_loan_path(@release_loan) %> |
+<%= link_to 'Back', release_loans_path %>

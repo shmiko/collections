@@ -1,0 +1,31 @@
+<h1>Listing recording_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @recording_types.each do |recording_type| %>
+  <tr>
+    <td><%= recording_type.Description %></td>
+    <td><%= recording_type.Created %></td>
+    <td><%= recording_type.Updated %></td>
+    <td><%= recording_type.Created_Person_ID %></td>
+    <td><%= recording_type.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', recording_type %></td>
+    <td><%= link_to 'Edit', edit_recording_type_path(recording_type) %></td>
+    <td><%= link_to 'Destroy', recording_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recording type', new_recording_type_path %>

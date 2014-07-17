@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Release_ID: 1
+  Container: MyString
+  Country_ID: 1
+  State: MyString
+  Condition_ID: 1
+  Publisher_ID: 1
+  Category_ID: 1
+  Genre_ID: 1
+  Binding_ID: 1
+  Edition_Type_ID: 1
+  Format_ID: 1
+  Type_ID: 1
+  Sub_Type_ID: 1
+  Notes: MyString
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1
+
+two:
+  Release_ID: 1
+  Container: MyString
+  Country_ID: 1
+  State: MyString
+  Condition_ID: 1
+  Publisher_ID: 1
+  Category_ID: 1
+  Genre_ID: 1
+  Binding_ID: 1
+  Edition_Type_ID: 1
+  Format_ID: 1
+  Type_ID: 1
+  Sub_Type_ID: 1
+  Notes: MyString
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1

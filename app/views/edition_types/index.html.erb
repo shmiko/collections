@@ -1,0 +1,31 @@
+<h1>Listing edition_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @edition_types.each do |edition_type| %>
+  <tr>
+    <td><%= edition_type.Description %></td>
+    <td><%= edition_type.Created %></td>
+    <td><%= edition_type.Updated %></td>
+    <td><%= edition_type.Created_Person_ID %></td>
+    <td><%= edition_type.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', edition_type %></td>
+    <td><%= link_to 'Edit', edit_edition_type_path(edition_type) %></td>
+    <td><%= link_to 'Destroy', edition_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Edition type', new_edition_type_path %>

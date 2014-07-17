@@ -1,0 +1,69 @@
+<%= form_for(@picture) do |f| %>
+  <% if @picture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
+
+      <ul>
+      <% @picture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Release_ID %><br />
+    <%= f.number_field :Release_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Front %><br />
+    <%= f.text_field :Front %>
+  </div>
+  <div class="field">
+    <%= f.label :Back %><br />
+    <%= f.text_field :Back %>
+  </div>
+  <div class="field">
+    <%= f.label :Front_Flap %><br />
+    <%= f.text_field :Front_Flap %>
+  </div>
+  <div class="field">
+    <%= f.label :Back_Flap %><br />
+    <%= f.text_field :Back_Flap %>
+  </div>
+  <div class="field">
+    <%= f.label :Inner_Page_1 %><br />
+    <%= f.text_field :Inner_Page_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Inner_Page_2 %><br />
+    <%= f.text_field :Inner_Page_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Inner_Page_3 %><br />
+    <%= f.text_field :Inner_Page_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Inner_Page_4 %><br />
+    <%= f.text_field :Inner_Page_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :Created %><br />
+    <%= f.date_select :Created %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated %><br />
+    <%= f.date_select :Updated %>
+  </div>
+  <div class="field">
+    <%= f.label :Created_Person_ID %><br />
+    <%= f.number_field :Created_Person_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated_Person_ID %><br />
+    <%= f.number_field :Updated_Person_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Street: MyString
+  Suburb: MyString
+  Country_ID: 1
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1
+
+two:
+  Street: MyString
+  Suburb: MyString
+  Country_ID: 1
+  Created: 2014-07-13
+  Updated: 2014-07-13
+  Created_Person_ID: 1
+  Updated_Person_ID: 1

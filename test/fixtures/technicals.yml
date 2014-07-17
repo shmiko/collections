@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Release_ID: 1
+  Bitrate: MyString
+  Size: MyString
+  Dimensions: MyString
+  Recording_Type_ID: 1
+  ISBN10: MyString
+  ISBN13: MyString
+  External_References: MyString
+  Created: 2014-07-13
+  Modified: 2014-07-13
+  Service: MyString
+  Service_URL: MyString
+  Webpage: MyString
+  Volume_nr: MyString
+  Volume_Name: MyString
+  Series: MyString
+  Pages: 1
+  Storage_Medium: MyString
+  Technical_Notes: MyString
+  No_of_Discs: 1
+  Total_Runtime: MyString
+  Value_High: MyString
+  Value_Med: MyString
+  Value_Low: MyString
+  Created_Person_ID: 1
+  Updated_Person_ID: 1
+
+two:
+  Release_ID: 1
+  Bitrate: MyString
+  Size: MyString
+  Dimensions: MyString
+  Recording_Type_ID: 1
+  ISBN10: MyString
+  ISBN13: MyString
+  External_References: MyString
+  Created: 2014-07-13
+  Modified: 2014-07-13
+  Service: MyString
+  Service_URL: MyString
+  Webpage: MyString
+  Volume_nr: MyString
+  Volume_Name: MyString
+  Series: MyString
+  Pages: 1
+  Storage_Medium: MyString
+  Technical_Notes: MyString
+  No_of_Discs: 1
+  Total_Runtime: MyString
+  Value_High: MyString
+  Value_Med: MyString
+  Value_Low: MyString
+  Created_Person_ID: 1
+  Updated_Person_ID: 1

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Release id:</b>
+  <%= @release_language.Release_ID %>
+</p>
+
+<p>
+  <b>Language id:</b>
+  <%= @release_language.Language_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @release_language.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @release_language.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @release_language.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @release_language.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_release_language_path(@release_language) %> |
+<%= link_to 'Back', release_languages_path %>

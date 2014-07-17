@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Address id:</b>
+  <%= @persons_addre.Address_ID %>
+</p>
+
+<p>
+  <b>Persons id:</b>
+  <%= @persons_addre.Persons_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @persons_addre.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @persons_addre.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @persons_addre.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @persons_addre.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_persons_addre_path(@persons_addre) %> |
+<%= link_to 'Back', persons_addres_path %>

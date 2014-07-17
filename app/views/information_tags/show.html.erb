@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tags id:</b>
+  <%= @information_tag.Tags_ID %>
+</p>
+
+<p>
+  <b>Release id:</b>
+  <%= @information_tag.Release_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @information_tag.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @information_tag.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @information_tag.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @information_tag.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_information_tag_path(@information_tag) %> |
+<%= link_to 'Back', information_tags_path %>

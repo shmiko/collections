@@ -1,0 +1,47 @@
+<h1>Listing releases</h1>
+
+<table>
+  <tr>
+    <th>Base id</th>
+    <th>Artist id</th>
+    <th>Collection type id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Release date</th>
+    <th>Cat no</th>
+    <th>Rating id</th>
+    <th>Edition comment</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @releases.each do |release| %>
+  <tr>
+    <td><%= release.Base_ID %></td>
+    <td><%= release.Artist_ID %></td>
+    <td><%= release.Collection_Type_ID %></td>
+    <td><%= release.Title %></td>
+    <td><%= release.Description %></td>
+    <td><%= release.Release_Date %></td>
+    <td><%= release.Cat_No %></td>
+    <td><%= release.Rating_ID %></td>
+    <td><%= release.Edition_Comment %></td>
+    <td><%= release.Created %></td>
+    <td><%= release.Updated %></td>
+    <td><%= release.Created_Person_ID %></td>
+    <td><%= release.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', release %></td>
+    <td><%= link_to 'Edit', edit_release_path(release) %></td>
+    <td><%= link_to 'Destroy', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Release', new_release_path %>

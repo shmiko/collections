@@ -1,0 +1,57 @@
+<h1>Listing information</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Container</th>
+    <th>Country id</th>
+    <th>State</th>
+    <th>Condition id</th>
+    <th>Publisher id</th>
+    <th>Category id</th>
+    <th>Genre id</th>
+    <th>Binding id</th>
+    <th>Edition type id</th>
+    <th>Format id</th>
+    <th>Type id</th>
+    <th>Sub type id</th>
+    <th>Notes</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @information.each do |information| %>
+  <tr>
+    <td><%= information.Release_ID %></td>
+    <td><%= information.Container %></td>
+    <td><%= information.Country_ID %></td>
+    <td><%= information.State %></td>
+    <td><%= information.Condition_ID %></td>
+    <td><%= information.Publisher_ID %></td>
+    <td><%= information.Category_ID %></td>
+    <td><%= information.Genre_ID %></td>
+    <td><%= information.Binding_ID %></td>
+    <td><%= information.Edition_Type_ID %></td>
+    <td><%= information.Format_ID %></td>
+    <td><%= information.Type_ID %></td>
+    <td><%= information.Sub_Type_ID %></td>
+    <td><%= information.Notes %></td>
+    <td><%= information.Created %></td>
+    <td><%= information.Updated %></td>
+    <td><%= information.Created_Person_ID %></td>
+    <td><%= information.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', information %></td>
+    <td><%= link_to 'Edit', edit_information_path(information) %></td>
+    <td><%= link_to 'Destroy', information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Information', new_information_path %>

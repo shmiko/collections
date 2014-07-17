@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Genre release id:</b>
+  <%= @genre.Genre_Release_ID %>
+</p>
+
+<p>
+  <b>Genre type id:</b>
+  <%= @genre.Genre_Type_ID %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @genre.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @genre.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @genre.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @genre.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_genre_path(@genre) %> |
+<%= link_to 'Back', genres_path %>

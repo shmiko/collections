@@ -1,0 +1,53 @@
+<h1>Listing persons_releases</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Persons id</th>
+    <th>Own</th>
+    <th>Want</th>
+    <th>No of copies</th>
+    <th>Audio type id</th>
+    <th>Filehash type</th>
+    <th>Filehash</th>
+    <th>Filesize</th>
+    <th>Bitrate</th>
+    <th>Size</th>
+    <th>Dimensions</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @persons_releases.each do |persons_release| %>
+  <tr>
+    <td><%= persons_release.Release_ID %></td>
+    <td><%= persons_release.Persons_ID %></td>
+    <td><%= persons_release.Own %></td>
+    <td><%= persons_release.Want %></td>
+    <td><%= persons_release.No_Of_Copies %></td>
+    <td><%= persons_release.Audio_Type_ID %></td>
+    <td><%= persons_release.Filehash_type %></td>
+    <td><%= persons_release.Filehash %></td>
+    <td><%= persons_release.Filesize %></td>
+    <td><%= persons_release.Bitrate %></td>
+    <td><%= persons_release.Size %></td>
+    <td><%= persons_release.Dimensions %></td>
+    <td><%= persons_release.Created %></td>
+    <td><%= persons_release.Updated %></td>
+    <td><%= persons_release.Created_Person_ID %></td>
+    <td><%= persons_release.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', persons_release %></td>
+    <td><%= link_to 'Edit', edit_persons_release_path(persons_release) %></td>
+    <td><%= link_to 'Destroy', persons_release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Persons release', new_persons_release_path %>

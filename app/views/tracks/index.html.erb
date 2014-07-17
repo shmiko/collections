@@ -1,0 +1,35 @@
+<h1>Listing tracks</h1>
+
+<table>
+  <tr>
+    <th>Base id</th>
+    <th>Title</th>
+    <th>Length</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tracks.each do |track| %>
+  <tr>
+    <td><%= track.Base_ID %></td>
+    <td><%= track.Title %></td>
+    <td><%= track.Length %></td>
+    <td><%= track.Created %></td>
+    <td><%= track.Updated %></td>
+    <td><%= track.Created_Person_ID %></td>
+    <td><%= track.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', track %></td>
+    <td><%= link_to 'Edit', edit_track_path(track) %></td>
+    <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Track', new_track_path %>

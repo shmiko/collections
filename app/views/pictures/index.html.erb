@@ -1,0 +1,47 @@
+<h1>Listing pictures</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Front</th>
+    <th>Back</th>
+    <th>Front flap</th>
+    <th>Back flap</th>
+    <th>Inner page 1</th>
+    <th>Inner page 2</th>
+    <th>Inner page 3</th>
+    <th>Inner page 4</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pictures.each do |picture| %>
+  <tr>
+    <td><%= picture.Release_ID %></td>
+    <td><%= picture.Front %></td>
+    <td><%= picture.Back %></td>
+    <td><%= picture.Front_Flap %></td>
+    <td><%= picture.Back_Flap %></td>
+    <td><%= picture.Inner_Page_1 %></td>
+    <td><%= picture.Inner_Page_2 %></td>
+    <td><%= picture.Inner_Page_3 %></td>
+    <td><%= picture.Inner_Page_4 %></td>
+    <td><%= picture.Created %></td>
+    <td><%= picture.Updated %></td>
+    <td><%= picture.Created_Person_ID %></td>
+    <td><%= picture.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', picture %></td>
+    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+    <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Picture', new_picture_path %>

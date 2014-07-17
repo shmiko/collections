@@ -1,0 +1,89 @@
+<%= form_for(@information) do |f| %>
+  <% if @information.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@information.errors.count, "error") %> prohibited this information from being saved:</h2>
+
+      <ul>
+      <% @information.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Release_ID %><br />
+    <%= f.number_field :Release_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Container %><br />
+    <%= f.text_field :Container %>
+  </div>
+  <div class="field">
+    <%= f.label :Country_ID %><br />
+    <%= f.number_field :Country_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :State %><br />
+    <%= f.text_field :State %>
+  </div>
+  <div class="field">
+    <%= f.label :Condition_ID %><br />
+    <%= f.number_field :Condition_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Publisher_ID %><br />
+    <%= f.number_field :Publisher_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Category_ID %><br />
+    <%= f.number_field :Category_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Genre_ID %><br />
+    <%= f.number_field :Genre_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Binding_ID %><br />
+    <%= f.number_field :Binding_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Edition_Type_ID %><br />
+    <%= f.number_field :Edition_Type_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Format_ID %><br />
+    <%= f.number_field :Format_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Type_ID %><br />
+    <%= f.number_field :Type_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Sub_Type_ID %><br />
+    <%= f.number_field :Sub_Type_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Notes %><br />
+    <%= f.text_field :Notes %>
+  </div>
+  <div class="field">
+    <%= f.label :Created %><br />
+    <%= f.date_select :Created %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated %><br />
+    <%= f.date_select :Updated %>
+  </div>
+  <div class="field">
+    <%= f.label :Created_Person_ID %><br />
+    <%= f.number_field :Created_Person_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Updated_Person_ID %><br />
+    <%= f.number_field :Updated_Person_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

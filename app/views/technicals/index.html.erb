@@ -1,0 +1,73 @@
+<h1>Listing technicals</h1>
+
+<table>
+  <tr>
+    <th>Release id</th>
+    <th>Bitrate</th>
+    <th>Size</th>
+    <th>Dimensions</th>
+    <th>Recording type id</th>
+    <th>Isbn10</th>
+    <th>Isbn13</th>
+    <th>External references</th>
+    <th>Created</th>
+    <th>Modified</th>
+    <th>Service</th>
+    <th>Service url</th>
+    <th>Webpage</th>
+    <th>Volume nr</th>
+    <th>Volume name</th>
+    <th>Series</th>
+    <th>Pages</th>
+    <th>Storage medium</th>
+    <th>Technical notes</th>
+    <th>No of discs</th>
+    <th>Total runtime</th>
+    <th>Value high</th>
+    <th>Value med</th>
+    <th>Value low</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @technicals.each do |technical| %>
+  <tr>
+    <td><%= technical.Release_ID %></td>
+    <td><%= technical.Bitrate %></td>
+    <td><%= technical.Size %></td>
+    <td><%= technical.Dimensions %></td>
+    <td><%= technical.Recording_Type_ID %></td>
+    <td><%= technical.ISBN10 %></td>
+    <td><%= technical.ISBN13 %></td>
+    <td><%= technical.External_References %></td>
+    <td><%= technical.Created %></td>
+    <td><%= technical.Modified %></td>
+    <td><%= technical.Service %></td>
+    <td><%= technical.Service_URL %></td>
+    <td><%= technical.Webpage %></td>
+    <td><%= technical.Volume_nr %></td>
+    <td><%= technical.Volume_Name %></td>
+    <td><%= technical.Series %></td>
+    <td><%= technical.Pages %></td>
+    <td><%= technical.Storage_Medium %></td>
+    <td><%= technical.Technical_Notes %></td>
+    <td><%= technical.No_of_Discs %></td>
+    <td><%= technical.Total_Runtime %></td>
+    <td><%= technical.Value_High %></td>
+    <td><%= technical.Value_Med %></td>
+    <td><%= technical.Value_Low %></td>
+    <td><%= technical.Created_Person_ID %></td>
+    <td><%= technical.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', technical %></td>
+    <td><%= link_to 'Edit', edit_technical_path(technical) %></td>
+    <td><%= link_to 'Destroy', technical, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Technical', new_technical_path %>

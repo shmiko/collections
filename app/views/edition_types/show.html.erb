@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @edition_type.Description %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @edition_type.Created %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @edition_type.Updated %>
+</p>
+
+<p>
+  <b>Created person id:</b>
+  <%= @edition_type.Created_Person_ID %>
+</p>
+
+<p>
+  <b>Updated person id:</b>
+  <%= @edition_type.Updated_Person_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_edition_type_path(@edition_type) %> |
+<%= link_to 'Back', edition_types_path %>

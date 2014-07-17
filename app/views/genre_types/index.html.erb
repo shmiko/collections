@@ -1,0 +1,33 @@
+<h1>Listing genre_types</h1>
+
+<table>
+  <tr>
+    <th>Genre type collection type id</th>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @genre_types.each do |genre_type| %>
+  <tr>
+    <td><%= genre_type.Genre_Type_Collection_Type_ID %></td>
+    <td><%= genre_type.Description %></td>
+    <td><%= genre_type.Created %></td>
+    <td><%= genre_type.Updated %></td>
+    <td><%= genre_type.Created_Person_ID %></td>
+    <td><%= genre_type.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', genre_type %></td>
+    <td><%= link_to 'Edit', edit_genre_type_path(genre_type) %></td>
+    <td><%= link_to 'Destroy', genre_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Genre type', new_genre_type_path %>

@@ -1,0 +1,31 @@
+<h1>Listing binds</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @binds.each do |bind| %>
+  <tr>
+    <td><%= bind.Description %></td>
+    <td><%= bind.Created %></td>
+    <td><%= bind.Updated %></td>
+    <td><%= bind.Created_Person_ID %></td>
+    <td><%= bind.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', bind %></td>
+    <td><%= link_to 'Edit', edit_bind_path(bind) %></td>
+    <td><%= link_to 'Destroy', bind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bind', new_bind_path %>

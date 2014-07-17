@@ -1,0 +1,33 @@
+<h1>Listing format_types</h1>
+
+<table>
+  <tr>
+    <th>Format type collection type id</th>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Created person id</th>
+    <th>Updated person id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @format_types.each do |format_type| %>
+  <tr>
+    <td><%= format_type.Format_Type_Collection_Type_ID %></td>
+    <td><%= format_type.Description %></td>
+    <td><%= format_type.Created %></td>
+    <td><%= format_type.Updated %></td>
+    <td><%= format_type.Created_Person_ID %></td>
+    <td><%= format_type.Updated_Person_ID %></td>
+    <td><%= link_to 'Show', format_type %></td>
+    <td><%= link_to 'Edit', edit_format_type_path(format_type) %></td>
+    <td><%= link_to 'Destroy', format_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Format type', new_format_type_path %>
